@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Belanosima';
+    src: url('Belanosima-Regular.woff2') format('woff2'),
+        url('Belanosima-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bg-green {
+    background: #81A36B;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #161616;
+}
+
+.global-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.box{
+    background: #D8D8D6;
+    color: #161616;
+}
+
+header {
+    height: 80px;
+    display: flex;
+}
+
+.logo {
+    width: 155px;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 21px 0 20px 165px;
+}
+
+.block-list {
+    width: 950px;
+    margin: 25px 0;
+    display: flex;
+}
+
+
+.block-list li {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 164.063%;
+    margin-left: 90px;
+}
+
+.block-list li:nth-child(1) {
+    margin-left: 130px;
+}
+
+#main {
+    margin: 0 165px;
+    width: 1110px;
+}
+
+.text-main, .img-main {
+    display: inline-block;
+}
+
+.text-main {
+    width: 540px;
+    
+}
+
+.img-main {
+    width: 540px;
+    height: 670px;
+    flex-shrink: 0;
+    padding-left: 30px;
+}
+
+.brand-name {
+    color: #161616;
+    font-size: 62px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 178px
+}
+
+.content-main {
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    width: 190px;
+    height: 60px;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 65px;
+    font-size: 18px;
+border: #81A36B;
+}
+
+.buttons button:nth-child(2) {
+    font-size: 18px;
+    border: 1px solid #81A36B;
+    background: #D8D8D6;
+}
+
+#about-us {
+    margin: 120px 450px 120px 450px;
+    width: 540px;
+}
+
+#about-us h2 {
+    font-size: 32px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+
+#about-us p {
+    text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+padding-top: 60px;
+}
+
+.benefits ul {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+}
+
+.benefits img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.benefits p {
+    font-size: 18px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#working-process {
+    margin: 120.4px 165px 120px 166px;
+    width: 1200px;
+}
+
+#working-process div {
+    display: inline-block;
+}
+
+#working-process div:nth-child(2) {
+    width: 540px;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#working-process h2 {
+    text-align: center;
+font-size: 32px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 187px;
+margin-bottom: 60px;
+}
+
+#working-process p {
+    width: 540px;
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+}
+
+#our-works {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.container-name {
+    text-align: center;
+font-size: 32px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 80px;
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work {
+    width: 350px;
+    height: 510px;
+}
+
+.work img{
+    margin: 15px 15px 0 15px;
+}
+
+.work p {
+    text-align: center;
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+padding-top: 23px;
+}
+
+#contacts {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contacts > div {
+    margin: 60px auto;
+}
+
+.numbers h3{
+    font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+margin-bottom: 40px;
+}
+
+.numbers li {
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+margin-bottom: 20px;
+}
+
+.brand h2{
+    font-size: 36px;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 211px;
+}
+
+.brand p {
+    font-size: 16px;
+    text-align: center;
+font-family: 'Belanosima';
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.social-nets h3 {
+    font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 164.063%;
+margin-bottom: 40px;
+}
+

@@ -78,13 +78,14 @@ a,button {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1150px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header {
     background: #81A36B;
-    padding: 25px 0;
+    padding: 25px 20px;
 }
 
 .header-container {
@@ -102,11 +103,40 @@ a,button {
     gap: 90px;
 }
 
+.burger {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.burger::before, .burger::after, .burger span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #161616;
+}
+
+.burger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger::after {
+    top: auto;
+    bottom: 0;
+}
+
 .text-main {
-    width: 540px;
+    max-width: 540px;
 }
 
 .flowers-container {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -158,9 +188,15 @@ a,button {
     background: #81A36B;
 }
 
+.benefits-container {
+    padding: 0 20px;
+}
+
 .benefits ul {
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .benefits img {
@@ -170,12 +206,13 @@ a,button {
 
 .benefits p {
     font-size: 18px;
-font-family: 'Belanosima';
+    font-family: 'Belanosima';
 }
 
 .process-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     padding: 120px 0;
 }
@@ -186,13 +223,13 @@ font-family: 'Belanosima';
 
 .text-process h2 {
     text-align: center;
-font-size: 32px;
-font-family: 'Belanosima';
-margin-bottom: 60px;
+    font-size: 32px;
+    font-family: 'Belanosima';
+    margin-bottom: 60px;
 }
 
 .text-process p {
-    width: 540px;
+    max-width: 540px;
     margin-bottom: 60px;
 }
 
@@ -202,20 +239,23 @@ margin-bottom: 60px;
 
 .container-name {
     text-align: center;
-font-size: 32px;
-font-family: 'Belanosima';
-margin-bottom: 80px;
+    font-size: 32px;
+    font-family: 'Belanosima';
+    margin-bottom: 80px;
 }
 
 .works {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .work {
     flex: 1 1 auto;
     padding: 15px 15px 40px;
     text-align: center;
+    max-width: 350px;
 }
 
 .work img {
@@ -229,28 +269,37 @@ margin-bottom: 80px;
 
 .contacts-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 60px;
     padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+.numbers {
+    text-align: center;
 }
 
 .numbers h3{
     font-size: 24px;
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .numbers li {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .brand h2{
     font-size: 36px;
-font-family: 'Belanosima';
+    font-family: 'Belanosima';
 }
 
 .social-nets h3 {
     font-size: 24px;
-margin-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.social-nets {
+    text-align: center;
 }
 
 .year {
@@ -260,3 +309,60 @@ margin-bottom: 40px;
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    .block-list {
+        gap: 60px;
+    }
+
+    .images {
+        width: 400px;
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .block-list {
+        gap: 20px 
+    }
+    .brand-name {
+        font-size: 40px;
+    }
+    .images {
+        width: 250px;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .block-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .images {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .buttons {
+        gap: 20px;
+    }
+
+    .buttons button {
+        padding: 10px 10px;
+    }
+
+    .work {
+        flex: 1 1 auto;
+        padding: 5px 5px 15px;
+    }
+
+    .work img {
+        width: 260px;
+        height: 310px;
+    }
+}
